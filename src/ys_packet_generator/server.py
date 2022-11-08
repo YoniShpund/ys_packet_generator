@@ -16,13 +16,12 @@ def listen(ip: str, port: int = 5001, buffer_size: int = 2000, full_debug: bool 
     """
     Receive data in UDP from the generator - unlimited loop
     Each packet data is an increasing index that repeats every 32bit
-    This method prints
     @param: ip - local IP address
             port - local port
             buffer_size - buffer size to reveive packets
             full_debug - print all debug prints
             debug - print only missed packet's index
-    @returns: void
+    @returns: None
     """
     # Create a datagram socket
     UDPServerSocket = socket.socket(
