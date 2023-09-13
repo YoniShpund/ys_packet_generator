@@ -25,7 +25,7 @@ def send(ip: str, port: int = 5001, bandwidth: int = 1000, packet_size: int = 14
             bandwidth - the bandwidth to allocate
             packet_size - size of each packet
             debug - use prints or not
-    @returns: void
+    @returns: None
     """
 
     timeToSend = 1 / ((bandwidth * 1024 / 8) / packet_size)
