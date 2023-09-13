@@ -28,7 +28,7 @@ def send(ip: str, port: int = 5001, bandwidth: int = 1000, packet_size: int = 14
     @returns: void
     """
 
-    timeToSend = 1 / ((bandwidth * 1024 / 8) / arg.size)
+    timeToSend = 1 / ((bandwidth * 1024 / 8) / packet_size)
 
     # Create UDP socket - IPv4
     clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
