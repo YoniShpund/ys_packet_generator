@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ys_packet_generator"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Yoni Shpund", email="shpundyoni@gmail.com" },
 ]
